@@ -2,19 +2,18 @@
 
 void walk ( char* path,   key_block* key, REGQUEUE *q ) {
 	static  char* root=(char*)key-0x20, *full=path;
-	 
 	
 	//printf("%lu\n", WindowsTickToUnixSeconds(key->time));
     //add current key name to printed path
 	char buf[0x1000];
 	memset(buf, '\x00', 0x1000);
-
+	
 	memcpy(path++,"/",2); 
 	memcpy(path,&key->name,key->len); path+=key->len;
-
+	memset(path,'\x00',full+0x1000-path);
 	chkKey(full, key->time, q);
 	
-
+	
     // for simplicity we can imagine keys as directories in filesystem and values
     // as files.
     // and since we already dumped values for this dir we will now iterate 
@@ -31,18 +30,18 @@ void walk ( char* path,   key_block* key, REGQUEUE *q ) {
             walk(path,(key_block*)((&item->first)[i*2]+root), q);
         } else for(int j=0;j<subitem->count;j++) {
 			if(item->block_type[1]=='i') {
-					int g=0;
 			}
             // also ms had chosen to skip hashes altogether in this case 
 			walk(path,(key_block*)((&subitem->first)[item->block_type[1]=='i'?j*2:j]+root), q);
+				
         }
+		
     }
-
+	
 }
 void walk ( char* path,   key_block* key, REGQUEUE *q, char* name ) {
 	static  char* root=(char*)key-0x20, *full=path;
 	 
-	
 	//printf("%lu\n", WindowsTickToUnixSeconds(key->time));
     //add current key name to printed path
 	char buf[0x1000];
@@ -68,14 +67,17 @@ void walk ( char* path,   key_block* key, REGQUEUE *q, char* name ) {
         if(item->block_type[1]=='f'||item->block_type[1]=='h') {
             // for now we skip hash codes (used by regedit for faster search)
             walk(path,(key_block*)((&item->first)[i*2]+root), q);
+		
         } else for(int j=0;j<subitem->count;j++) {
 			if(item->block_type[1]=='i') {
 					int g=0;
 			}
             // also ms had chosen to skip hashes altogether in this case 
 			walk(path,(key_block*)((&subitem->first)[item->block_type[1]=='i'?j*2:j]+root), q);
+			
         }
     }
+	
 
 }
 void chkKey(char *full, long long time, REGQUEUE *q)
