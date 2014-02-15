@@ -6,5 +6,5 @@ void main(int argc, char ** argv)
 	parser(argc, argv, &q);
 
 	reg2sql(&q);
-		
+	
 }

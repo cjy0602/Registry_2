@@ -1,26 +1,30 @@
-﻿빌드 시작: 2014-02-11 오후 8:21:20
+﻿빌드 시작: 2014-02-13 오전 1:54:27
 2 노드의 "C:\Users\eunjin\Documents\Visual Studio 2012\Projects\reg2sql\reg2sql\reg2sql.vcxproj" 프로젝트(Build 대상)입니다.
 ClCompile:
-  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\eunjin\Desktop\IOAF2\sqlite /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt parser.cpp
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\eunjin\Desktop\IOAF2\sqlite /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt parser.cpp registry.cpp
+  registry.cpp
   parser.cpp
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(99): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(109): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(114): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(118): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(218) : 'fopen' 선언을 참조하십시오.
 c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(126): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(146): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(132): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
-c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(150): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(136): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(141): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(145): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(149): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(153): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(173): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+c:\users\eunjin\documents\visual studio 2012\projects\reg2sql\reg2sql\parser.cpp(177): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
 Link:
   C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\eunjin\Documents\Visual Studio 2012\Projects\reg2sql\Debug\reg2sql.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\eunjin\Desktop\IOAF2\sqlite sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\eunjin\Documents\Visual Studio 2012\Projects\reg2sql\Debug\reg2sql.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\eunjin\Documents\Visual Studio 2012\Projects\reg2sql\Debug\reg2sql.lib" /MACHINE:X86 Debug\main.obj
   Debug\parser.obj
@@ -33,4 +37,4 @@ Link:
 
 빌드했습니다.
 
-경과 시간: 00:00:02.71
+경과 시간: 00:00:04.15
